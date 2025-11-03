@@ -80,7 +80,6 @@ A migração é executada automaticamente conforme definido no arquivo [`docker-
 
 1. **Clone o repositório**
 	git clone https://github.com/macdbr/loginci.git
-	cd loginci
 
 2. **Cria uma imagem Docker:** 
 	docker compose build
@@ -88,7 +87,7 @@ A migração é executada automaticamente conforme definido no arquivo [`docker-
 3. **Suba os containers**  
 	docker-compose up -d
 
-4. **Acesse o sistema via navegador**
+4. **Acesse o sistema via navegador:**
 	http://localhost:8080
 
 
@@ -100,6 +99,6 @@ O ambiente Docker cria automaticamente o banco e popula as tabelas na primeira e
 
 👨‍💻 Autor
 
-Marcelo Costa
-Desenvolvedor PHP / CodeIgniter
+Marcelo Costa.
+Desenvolvedor PHP / CodeIgniter - 
 📧 macdbr@gmail.com
