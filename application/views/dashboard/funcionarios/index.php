@@ -79,6 +79,10 @@
                     ?>
                   </tbody>
                 </table>
+
+                <!-- Links da paginação -->
+                <?php echo $links; ?>
+
               </div>
               
               <!-- Token CSRF escondido -->
