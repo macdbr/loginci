@@ -82,11 +82,13 @@ A migração é executada automaticamente conforme definido no arquivo [`docker-
 	git clone https://github.com/macdbr/loginci.git
 	cd loginci
 
-2. Suba os containers  
-	se preciso: docker compose build
+2. Cria uma imagem Docker 
+	docker compose build
+
+3. Suba os containers  
 	docker-compose up -d
 
-3. Acesse o sistema via navegador
+4. Acesse o sistema via navegador
 	http://localhost:8080
 
 
