@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['home'] = 'home';
 $route['dashboard'] = 'dashboard/home/';
+
+$route['funcionarios/(:any)'] = 'funcionarios/index/$1';

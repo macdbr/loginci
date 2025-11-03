@@ -61,4 +61,16 @@ class Funcionarios_model extends CI_Model {
             return false;
         }
     }
+
+    //get_usuarios
+    public function paginacao($limit, $offset) {
+        $query = $this->db->get('employees', $limit, $offset);
+        return $query->result();
+    }
+
+    public function count_all_funcionarios() {
+        return $this->db->count_all('employees');
+    }
+
+
 }

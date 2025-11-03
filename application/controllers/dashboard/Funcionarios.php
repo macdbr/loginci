@@ -18,6 +18,8 @@ class Funcionarios extends CI_Controller {
 	}
 	
 	public function index(){
+        $this->load->library('pagination');
+
 		$data = array(
 			'titulo' => 'Funcionários(as) cadastrados(as)',
 			'styles' => array(
@@ -30,8 +32,37 @@ class Funcionarios extends CI_Controller {
 				'assets/jquery-ui/jquery-ui.min.js',
 				'js/datatables.js',
 			),
-			'funcionarios' => $this->funcionarios_model->get_all()
 		);		
+
+
+        // Configuração da paginação
+        $config['base_url'] = site_url('dashboard/funcionarios/index');
+        $config['total_rows'] = $this->funcionarios_model->count_all_funcionarios();
+        $config['per_page'] = 5; // número de registros que será mostrado por página
+        $config['uri_segment'] = 4; // segmento da URL: /dashboard/funcionarios/index/10
+
+        // Estilo da navegação(nav) do Bootstrap
+        $config['full_tag_open'] = '<nav><ul class="pagination justify-content-center">';
+        $config['full_tag_close'] = '</ul></nav>';
+        $config['attributes'] = ['class' => 'page-link'];
+        $config['first_tag_open'] = '<li class="page-item">';
+        $config['first_tag_close'] = '</li>';
+        $config['last_tag_open'] = '<li class="page-item">';
+        $config['last_tag_close'] = '</li>';
+        $config['next_tag_open'] = '<li class="page-item">';
+        $config['next_tag_close'] = '</li>';
+        $config['prev_tag_open'] = '<li class="page-item">';
+        $config['prev_tag_close'] = '</li>';
+        $config['cur_tag_open'] = '<li class="page-item active"><span class="page-link">';
+        $config['cur_tag_close'] = '</span></li>';
+        $config['num_tag_open'] = '<li class="page-item">';
+        $config['num_tag_close'] = '</li>';
+
+        $this->pagination->initialize($config);
+
+        $page = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
+        $data['funcionarios'] = $this->funcionarios_model->paginacao($config['per_page'], $page);
+        $data['links'] = $this->pagination->create_links();
 
 		$this->load->view('dashboard/layout/header', $data);  
 		$this->load->view('dashboard/funcionarios/index', $data);
