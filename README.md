@@ -2,7 +2,7 @@
 
 **Teste Técnico – Desenvolvedor (CodeIgniter 3)**  
 
-Este projeto tem como objetivo implementar um **sistema simples de autenticação, cadastro e edição de funcionários**, desenvolvido para atender aos requisitos do **Teste Técnico – Desenvolvedor (CodeIgniter 3)**.  
+Este projeto tem como objetivo implementar um **sistema simples de autenticação, cadastro e edição de funcionários**, desenvolvido para atender aos requisitos do **Teste Técnico – Desenvolvedor (CodeIgniter 3)** da empresa **Instituto Mollitiam**.  
 
 O ambiente é totalmente **containerizado com Docker**, utilizando **CodeIgniter 3**, **PostgreSQL** e **Bootstrap 5**.
 

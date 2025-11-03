@@ -36,31 +36,31 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group mb-2">
                     <label>Nome</label>
                     <input type="text" name="name" class="form-control" placeholder="Nome" value="">
                     <div class="name_error text-danger error-message"></div>
                   </div>
 
-                  <div class="form-group ">
+                  <div class="form-group mb-2">
                     <label>Email</label>
                     <input type="text" name="email" class="form-control" placeholder="Email" value="">
                     <div class="email_error text-danger error-message"></div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group mb-2">
                     <label>Cargo</label>
                     <input type="text" name="position" class="form-control" placeholder="Cargo" value="">
                     <p class="position_error text-danger error-message"></p>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group mb-2">
                     <label>Salário</label>
                     <input type="text" placeholder="0,00" name="salary" class="form-control salary" placeholder="0,00" value="">
                     <p class="salary_error text-danger error-message"></p>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group mb-2">
                     <label>Data admissão</label>
                     <input type="date" name="admission_date" class="form-control" value="">
                     <p class="admission_date_error text-danger error-message"></p>

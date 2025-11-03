@@ -41,31 +41,31 @@
                     <label>ID:<?php echo $funcionario_id;?></label>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group mb-2">
                     <label>Nome</label>
                     <input type="text" name="name" class="form-control" placeholder="Nome" value="<?php echo (isset($funcionario) ? $funcionario->name : set_value('name'));?>">
                     <div class="name_error text-danger error-message"></div>
                   </div>
 
-                  <div class="form-group ">
+                  <div class="form-group  mb-2">
                     <label>Email</label>
                     <input type="text" name="email" class="form-control" placeholder="Email" value="<?php echo (isset($funcionario) ? $funcionario->email : set_value('email'));?>">
                     <div class="email_error text-danger error-message"></div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group  mb-2">
                     <label>Cargo</label>
                     <input type="text" name="position" class="form-control" placeholder="Cargo" value="<?php echo (isset($funcionario) ? $funcionario->position : set_value('position'));?>">
                     <p class="position_error text-danger error-message"></p>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group  mb-2">
                     <label>Salário</label>
                     <input type="text" placeholder="0,00" name="salary" class="form-control salary" placeholder="0,00" value="<?php echo (isset($funcionario) ? $funcionario->salary : set_value('salary'));?>">
                     <p class="salary_error text-danger error-message"></p>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group  mb-2">
                     <label>Data admissão</label>
                     <input type="date" name="admission_date" class="form-control" value="<?php echo (isset($funcionario) ? $funcionario->admission_date : set_value('admission_date'));?>">
                     <p class="admission_date_error text-danger error-message"></p>
