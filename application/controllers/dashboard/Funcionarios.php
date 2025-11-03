@@ -230,7 +230,7 @@ class Funcionarios extends CI_Controller {
 
 
           /* Importante: Validar a ID do funcionário e verificar permissões.            
-          * A id do funcionário veio do e por questão de segurança
+          * A id do funcionário veio do ajax e por questão de segurança
           * temos que garantir que essa id é de um funcionário que existe.
           * Uma melhoria para o teste ou caso fosse um sistema maior, seria garantir que o usuário 
           * logado possui permissão para excluir funcionários */

@@ -64,11 +64,11 @@
             <?php echo form_open('dashboard/login/autenticar', ['method' => 'post']); ?>
 
               <div class="form-floating">
-                <input value="admin@example.com" required type="email" class="form-control" name="email" placeholder="name@example.com">
+                <input value="" required type="email" class="form-control" name="email" placeholder="name@example.com">
                 <label for="email">Seu Email</label>
               </div>
               <div class="form-floating">
-                <input value="123456" required type="password" class="form-control" name="password" placeholder="Password">
+                <input value="" required type="password" class="form-control" name="password" placeholder="Password">
                 <label for="password">Senha</label>
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
