@@ -1,0 +1,24 @@
+
+services:
+  app:
+    container_name: LOGINCI
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - postgres  
+
+  postgres:
+    container_name: postgres
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_DB: codeigniter_test
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
