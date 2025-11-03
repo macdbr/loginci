@@ -76,6 +76,13 @@ A migração é executada automaticamente conforme definido no arquivo [`docker-
 
 ---
 
+## ⚙️ Sistema usado para desenvolver e testar
+
+🐧 Ubuntu 24.04.3 LTS
+
+
+---
+
 ## 🚀 Como Executar o Projeto
 
 1. **Clone o repositório**
